@@ -2,7 +2,7 @@
 title: "HW01-Yuli-Yin"
 author: Yuli Yin
 date: 02/23/2018
-output: html_document
+output: github_document
 ---
 #Q2 Data Import 
 
@@ -63,6 +63,7 @@ column.types <- c(
     'integer',
     'integer'
 )
+setwd("~/Desktop/stat133/hw-stat133/hw01/")
 imports.85 <- read.csv(
     'imports-85.data',
     header=FALSE,
@@ -74,8 +75,10 @@ imports.85 <- read.csv(
 imports.85
 str(imports.85)
 ```
+
 ```{r}
 library(readr)
+setwd("~/Desktop/stat133/hw-stat133/hw01/")
 imports_85 <- read_csv(
   file = 'imports-85.data',
   na = c("?"),
